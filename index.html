@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click That Button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- script -->
+    <script src="./script.js"></script>
+    <!-- container -->
+    <div class="container flex gap column">
+        <!-- nav -->
+        <nav class="wid center-margin flex spacing pad align-center">
+            <h1>Dojonary</h1>
+            <input type="search" placeholder="Whatcha searchin for?" id="top-search">
+            <button id="login" onclick="changeText(this)">Login</button>
+        </nav>
+        <!-- page content -->
+        <div class="page-content wid center-margin flex gap">
+            <!-- definitions -->
+            <div class="definitions flex column gap">
+                <!-- definition 1 -->
+                <div class="definition1 pad flex gap">
+                    <div class="left-def flex gap column">
+                        <h2>ninja</h2>
+                        <p class="noun itc">noun</p>
+                        <p class="plural">Plural: <span class="itc">ninjas</span></p>
+                        <button onclick="like(this)" class="like-btn center-margin">13 likes</button>
+                    </div>
+                    <div class="right-def flex align-center">
+                        <p class="text">A practitioner skilled in the <a href="#">Japanese</a> art of <a
+                                href="#">ninjutsu</a></p>
+                    </div>
+                </div>
+                <!-- definition 2 -->
+                <div class="definition2 pad flex gap">
+                    <div class="left-def flex gap column">
+                        <h2>ninja</h2>
+                        <p class="noun itc">noun</p>
+                        <p class="plural">Plural: <span class="itc">ninjas</span></p>
+                        <button  onclick="like(this)" class="like-btn center-margin">37 likes</button>
+                    </div>
+                    <div class="right-def flex align-center">
+                        <p class="text"> A <a href="#">programmer</a> who breaks down problems with <a
+                                href="#">zen</a>-like focus</p>
+                    </div>
+                </div>
+            </div>
+            <!-- aside -->
+            <aside class="pad flex column gap pad spacing">
+                <p>Dojonary is defined by <span class="bold">YOU</span></p>
+                <button onclick="removeDef(this)" class="center-margin">Add Definition</button>
+            </aside>
+        </div>
+
+    </div>
+</body>
+
+</html>
